@@ -586,54 +586,32 @@
             
         </h1>
         <div class="content">
-            <hr>
-<h1 id="SVN-的介绍"><a href="#SVN-的介绍" class="headerlink" title="SVN 的介绍"></a>SVN 的介绍</h1><h1 id="SVN-的使用"><a href="#SVN-的使用" class="headerlink" title="SVN 的使用"></a>SVN 的使用</h1><h2 id="Visual-SVN-的下载使用"><a href="#Visual-SVN-的下载使用" class="headerlink" title="Visual SVN 的下载使用"></a>Visual SVN 的下载使用</h2><p>1— 安装完成打开 Visual SVN Server 即可看到界面。<br>2— 然后就可以新建仓库，选择 FSFS 的。<br>3— 建议选择 empty 选项，然后所有人可以访问，当然也可以选择其他的。<br>4— 创建用户用于访问仓库，也可以创建组对用户分类。<br>5— Copy URL to ClipBoard 用于在浏览器访问。</p>
-<h2 id="Tortoise-SVN-的下载使用"><a href="#Tortoise-SVN-的下载使用" class="headerlink" title="Tortoise SVN 的下载使用"></a>Tortoise SVN 的下载使用</h2><p>右键 TortoiseSvn Repo-browser ，把 URL 地址给他即可。然后输入账号密码，以后登录自动存储。要清除这些保存的账号密码：右键 TortoiseSvn settings saved data  clear ，</p>
-<p>第一次从 svn 服务器下载代码称为 checkout， 右键 SVN Checkout 即可</p>
-<p>add 表示添加到本地仓库，commit 表示提交到服务器。显示历史版本：show log</p>
-<p>解决冲突：同时对一个文件操作，一个提交，一个不提交。</p>
-<p>安装svn注意事项，在 idea 的时候会使用到。视频09</p>
-<p>SVN 安装位置及仓库位置  端口：443 或 8443<br>D:\01_Programs\02_Java\07_SVN&amp;Git\SVN\VisualSVN\Repositories</p>
-<p>// svn 的使用过程<br>Checkout –&gt; update –&gt; commit</p>
-<p>ssm 后台系统</p>
-<p>查询 SSM 用户的所有表<br>select * from all_tables where owner = ‘SSM’</p>
-<p>insert into users values(‘111-111’,‘lisa@163.com’,’lisa’,’123’,’18736501678’,’1’)<br>select * from users<br>select * from all_tables where owner = ‘SSM’<br>select * from users_role</p>
-<p>insert into role values(‘222’,’user’,’normal’)<br>insert into users_role values(‘111-111’,’1111’)</p>
-<p>select * from role where id in (select roleId from users_role where userId=’111-111’)<br>update users set password=’$2a$10$Ce8LB3jdYDZ2f6HB281zA.4eC7v6ziJdK8MMWg0Yu8ETMg5ToMpIe’ where id = ‘111-333’</p>
-<p>企业管理系统环境搭建</p>
-<p>1— 新建工程<br>2— 新建模块<br>    1— 新建ssm-dao<br>    2— 新建ssm-service<br>    3— 新建ssm-domain<br>    4— 新建ssm-utils<br>    5— 新建ssm-web ，此时要注意，创建这个模块要选择骨架：maven-archetype-webapp<br>    6— 在 ssm-web/src/main 下新建 java 和 resources 文件夹，然后标记作用<br>    7— 然后再resources下面加入3个文件：<br>        1— applicationContext.xml    Spring 的配置文件<br>        2— db.properties    数据库配置文件<br>        3— spring-mvc.xml    Spring MVC 配置文件</p>
-<p>如果没有日志文件，那么出错了控制台不会提示哪儿出错了。</p>
-<p>@DateTimeFormat(pattern=”yyyy-MM-dd HH:mm”)    解决日期格式问题，将字符串转化为时间格式</p>
-<p>pageHelper 分页助手的使用，他的里面有一个 PageInfo 类，是针对总页数，页码，每页条数等等操作的一个类。</p>
-<p>解决 Oracle 问题：<br>1— java.sql.SQLException: No suitable driver<br>2— java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver</p>
-<p>出现这两个问题的原因是没有添加依赖，并且版本不能用数字版本如 11.2.0.1.0 ，应该用 release 版本，这样才可以运行项目。</p>
-<p>jsp 语法：<br>html 引入 jsp ：在 html 文件顶部加入这行代码即可：&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8” pageEncoding=”UTF-8”%&gt;<br>jsp:include<br>jsp:forward<br>&lt;c:forEach&gt;</c:forEach><br>action=”写提交地址”<br>${pageContext.request.contextPath}上下文对象最常用</p>
-<p>使用这个项目需要软件：</p>
-<p>1— 安装 Oracle 和 PL/SQL<br>2— 创建 SSM 用户 ，密码是 root，然后创建一些表<br>3— 需要安装 Maven，然后需要修改 Maven 仓库和配置文件<br>4— 安装 JDK1.8<br>5— 开发软件为 IDEA<br>6— </p>
-<h3 id="文章中横竖图demo；对于横竖图推荐分开使用，且长宽一致的，如统一手机拍照、电脑截图"><a href="#文章中横竖图demo；对于横竖图推荐分开使用，且长宽一致的，如统一手机拍照、电脑截图" class="headerlink" title="文章中横竖图demo；对于横竖图推荐分开使用，且长宽一致的，如统一手机拍照、电脑截图"></a>文章中横竖图demo；对于横竖图推荐分开使用，且长宽一致的，如统一手机拍照、电脑截图</h3><p>使用方法：md文章中放入以下代码</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">+ 横竖图</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"justified-gallery"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">![张芷溪](http://wx1.sinaimg.cn/large/b5d1b710ly1g6bz7n92s7j212w0nr1kx.jpg) ![李一桐](http://wx2.sinaimg.cn/mw1024/005RAHfgly1fvfc4f19qfj33402c0qv9.jpg) ![gakki](http://wx1.sinaimg.cn/mw1024/70396e5agy1g5qe457i6yj21660ogtap.jpg) ![李一桐](http://wx1.sinaimg.cn/mw1024/005RAHfgly1fuzz17s2q3j32e43cku0x.jpg) ![彭小苒](http://wx1.sinaimg.cn/mw1024/d79c9b94ly1g1pb1uthr5j21f02iox6t.jpg)<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">+ 横图4</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"img-x"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">![v4](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png) ![v3](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png) ![v4](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png) ![v3](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png)<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">+ 竖图5</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"img-y"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">![电池](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg) ![打王者荣耀](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141906.jpg) ![支付宝付款](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141926.jpg) ![锤子便签](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145956.jpg) ![电池](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg)<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="效果如下（多图左右拉查看）"><a href="#效果如下（多图左右拉查看）" class="headerlink" title="效果如下（多图左右拉查看）"></a>效果如下（多图左右拉查看）</h4><ul>
-<li>横竖图</li>
-</ul>
-<div class="justified-gallery">
-
-<p><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191128222602.jpg" alt="李庚希"> <img src="http://wx4.sinaimg.cn/mw1024/d79c9b94ly1g0pmoa18rkj23wm2lrb2e.jpg" alt="彭小苒"> <img src="http://wx1.sinaimg.cn/mw1024/d79c9b94ly1g1pb1uthr5j21f02iox6t.jpg" alt="彭小苒"> <img src="http://wx3.sinaimg.cn/mw1024/63112839gy1g423ovlwzaj234022ou0y.jpg" alt="唐艺昕"> <img src="http://wx3.sinaimg.cn/mw1024/0068cFqEgy1g5v23wwjwdj30sg0ld0vo.jpg" alt="张芷溪"> <img src="http://wx3.sinaimg.cn/mw1024/005RAHfgly1g2jhakgz41j31sc2dsx6u.jpg" alt="李一桐"> <img src="http://wx4.sinaimg.cn/large/70396e5agy1fml9habgdcg20p00hd7wz.gif" alt="gakki"></div></p>
-<ul>
-<li>横图4</li>
-</ul>
-<div class="img-x">
-
-<p><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png" alt="v4"><br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png" alt="v3"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png" alt="v4"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png" alt="v3"></div></p>
-<ul>
-<li>竖图5</li>
-</ul>
-<div class="img-y">
-
-<p><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg" alt="电池"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141906.jpg" alt="打王者荣耀"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141926.jpg" alt="支付宝付款"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145956.jpg" alt="锤子便签"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg" alt="电池"></div></p>
-
+            这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你确实想看，请与我联系。
         </div>
         
+        
+        <div class="level is-mobile is-flex">
+            <div class="level-start">
+                
+                <div class="level-item is-size-7 is-uppercase guo-tags">
+                    <i class="fas fa-tags has-text-grey"></i>&nbsp;
+                    <a class="has-link-grey -link" href="/tags/svn/" rel="tag">svn</a>
+                </div>
+                
+            </div>
+            <div class="level-start">
+                <div class="level-item has-text-grey is-size-7 is-hidden-mobile">
+                
+                <time datetime="2021-02-17T14:09:21.307Z"><i class="far fa-calendar-check">&nbsp;最后修改:&nbsp;</i>2021-02-17</time>
+                
+                </div>
+            </div>
+            <div class="level-start">
+                <div class="level-item ">
+                <a class="button is-size-7 is-light" href="/svn.html#more"><i class="fas fa-book-reader has-text-grey">&nbsp;</i>阅读更多&gt;&gt;</a>
+                </div>
+            </div>
+        </div>
         
         
         <!-- 文章版权信息代码开始 -->
@@ -977,9 +955,7 @@
             
         </h1>
         <div class="content">
-            <hr>
-<p>F:\00-BLOG-HOME\source\gallery\Front-End</p>
-<h1 id="认识网页"><a href="#认识网页" class="headerlink" title="认识网页"></a>认识网页</h1><p>网页主要由文字、图像和超链接等元素构成。当然，除了这些元素，网页中还可以包含音频、视频以及Flash等。</p>
+            这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你确实想看，请与我联系。
         </div>
         
         
@@ -995,7 +971,7 @@
             <div class="level-start">
                 <div class="level-item has-text-grey is-size-7 is-hidden-mobile">
                 
-                <time datetime="2020-05-16T08:46:08.624Z"><i class="far fa-calendar-check">&nbsp;最后修改:&nbsp;</i>2020-05-16</time>
+                <time datetime="2021-02-17T14:09:36.015Z"><i class="far fa-calendar-check">&nbsp;最后修改:&nbsp;</i>2021-02-17</time>
                 
                 </div>
             </div>

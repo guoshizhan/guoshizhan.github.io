@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://guoshizhan.github.io/Algorithm.html</loc>
-    <lastmod>2021-02-12</lastmod>
+    <loc>https://guoshizhan.github.io/front-html.html</loc>
+    <lastmod>2021-02-17</lastmod>
+  </url>  <url>
+    <loc>https://guoshizhan.github.io/svn.html</loc>
+    <lastmod>2021-02-17</lastmod>
   </url>  <url>
     <loc>https://guoshizhan.github.io/interview.html</loc>
+    <lastmod>2021-02-17</lastmod>
+  </url>  <url>
+    <loc>https://guoshizhan.github.io/English-01.html</loc>
+    <lastmod>2021-02-17</lastmod>
+  </url>  <url>
+    <loc>https://guoshizhan.github.io/Algorithm.html</loc>
     <lastmod>2021-02-12</lastmod>
   </url>  <url>
     <loc>https://guoshizhan.github.io/Spring-Boot-01.html</loc>
@@ -49,9 +58,6 @@
     <loc>https://guoshizhan.github.io/fox-story.html</loc>
     <lastmod>2020-08-03</lastmod>
   </url>  <url>
-    <loc>https://guoshizhan.github.io/English-01.html</loc>
-    <lastmod>2020-07-16</lastmod>
-  </url>  <url>
     <loc>https://guoshizhan.github.io/Linux.html</loc>
     <lastmod>2020-07-16</lastmod>
   </url>  <url>
@@ -70,17 +76,11 @@
     <loc>https://guoshizhan.github.io/vue.html</loc>
     <lastmod>2020-06-24</lastmod>
   </url>  <url>
-    <loc>https://guoshizhan.github.io/svn.html</loc>
-    <lastmod>2020-06-22</lastmod>
-  </url>  <url>
     <loc>https://guoshizhan.github.io/computerNetwork.html</loc>
     <lastmod>2020-06-22</lastmod>
   </url>  <url>
     <loc>https://guoshizhan.github.io/SSM-01.html</loc>
     <lastmod>2020-06-22</lastmod>
-  </url>  <url>
-    <loc>https://guoshizhan.github.io/front-html.html</loc>
-    <lastmod>2020-05-16</lastmod>
   </url>  <url>
     <loc>https://guoshizhan.github.io/Java-IO.html</loc>
     <lastmod>2020-05-16</lastmod>
